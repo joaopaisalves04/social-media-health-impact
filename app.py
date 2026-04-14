@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -9,6 +10,11 @@ st.set_page_config(
     page_icon="📱",
     layout="centered"
 )
+
+# ── Auto-train if model_bundle.pkl doesn't exist (e.g. on Streamlit Cloud) ───
+if not os.path.exists("model_bundle.pkl"):
+    with st.spinner("First run — training model, please wait..."):
+        import train_and_save_model  # runs the training script
 
 # ── Load model bundle (cached — loaded once per app instance) ─────────────────
 @st.cache_resource

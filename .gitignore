@@ -1,7 +1,4 @@
-# Dataset (download from Kaggle)
-*.csv
-
-# Trained model binary (regenerate with train_and_save_model.py)
+# Trained model binary (auto-generated on first run)
 *.pkl
 
 # Python
