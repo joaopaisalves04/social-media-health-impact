@@ -3,7 +3,7 @@
 A machine learning project that predicts whether social media use has a **Negative**, **Neutral**, or **Positive** impact on a student's health — based on usage habits, sleep, mental health score, and platform.
 
 ## 🌐 Live App
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://social-media-health-impact.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://social-media-health-impact-edbweewtayczeps86qovtw.streamlit.app)
 
 ---
 
@@ -30,7 +30,7 @@ A machine learning project that predicts whether social media use has a **Negati
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/JoaoPaisAlves/social-media-health-impact.git
+git clone https://github.com/joaopaisalves04/social-media-health-impact.git
 cd social-media-health-impact
 
 # 2. Install dependencies
@@ -59,8 +59,8 @@ streamlit run app.py
 └── .gitignore
 ```
 
-> **Note:** `model_bundle.pkl` and the dataset CSV are excluded from the repo.  
-> Download the dataset from [Kaggle](https://www.kaggle.com/datasets/sumeakash/impact-of-social-media-on-health) and run `train_and_save_model.py` to generate the model.
+> **Note:** `model_bundle.pkl` is excluded from the repo (auto-generated on first run).  
+> The dataset CSV is included — or download it from [Kaggle](https://www.kaggle.com/datasets/sumeakash/impact-of-social-media-on-health).
 
 ---
 
